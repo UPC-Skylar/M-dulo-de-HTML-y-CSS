@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<html lang="es-PE">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lima</title>
-    <style>
-      h1 {
-        color: salmon;
-        font-size: 48px;
-      }
-    </style>
+    <title>Contact</title>
   </head>
   <body>
-    <h1>¡Bienvenidos a mi ciudad!</h1>
     <nav>
       <ul>
         <li><a href="./index.html">Home</a></li>
@@ -20,14 +13,22 @@
         <li><a href="./acommodation.html">Acommodation</a></li>
         <li><a href="./visits_activities.html">Visits Activities</a></li>
         <li><a href="./entertainment.html">Entertainment</a></li>
-        <li><a href="./Contact.html">Contact</a></li>
       </ul>
     </nav>
-    <br />
-    <img
-      src="./Pictures/lima-peru-shutterstock_1047718252.jpg"
-      alt="Ciudad de Lima, Perú"
-      title="Lima, Perú"
-    />
+    <form
+      action="mailto:zaynml2021@gmail.com"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <label for="usuario">Usuario:</label>
+      <input type="text" name="usuario" id="user" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" />
+      <br />
+      <label for="message">Mensaje:</label>
+      <textarea name="message" id="" cols="30" rows="10"></textarea>
+      <input type="submit" />
+    </form>
   </body>
 </html>
